@@ -49,7 +49,6 @@ function Resume() {
           </p>
         </div>
       </div>
-     <Footer />
     </section>
    )
 }

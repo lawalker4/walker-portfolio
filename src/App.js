@@ -4,6 +4,7 @@ import Projects from '../src/Components/Projects';
 import Resume from '../src/Components/Resume';
 import Contact from '../src/Components/Contact';
 import Header from '../src/Components/Header';
+import Footer from './Components/Footer';
 
 function App() {
 
@@ -15,10 +16,10 @@ function App() {
   ])
 
   const [currnetPage, setCurrentPage] = useState(pages[0]);
-
+  console.log(currnetPage)
   return (
-    <html>
-      <Header
+    <>
+     <Header
       currnetPage={currnetPage}
       setCurrentPage={setCurrentPage}
       />
@@ -29,7 +30,8 @@ function App() {
         {currnetPage === 'Contact' && <Contact />}
         {currnetPage === 'Resume' && <Resume />}
       </body>
-    </html>
+      <Footer/>
+      </>
   );
 }
 

@@ -62,7 +62,7 @@ const Projects = ({ category }) => {
      
     ]);
 
-    const currentProjects = projects.filter((project) => project.category === category);
+    const currentProjects = projects.filter((project) => project);
     return (
       <div>
         <div className="flex-row">
@@ -70,6 +70,7 @@ const Projects = ({ category }) => {
             //make image a link
             <div className="col-md-6 col-sm-12 col-lg-4 text-center">
               <a href={image.link} target="_blank" rel="noopener noreferrer">
+                {image.name}
                 </a>
                 </div>
         ))}
@@ -77,7 +78,6 @@ const Projects = ({ category }) => {
     </div>
   );
 
-  <Footer/>
 
 };
 

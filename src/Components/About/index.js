@@ -15,7 +15,6 @@ function About() {
             </p>
         </div>
         <div className='icons'>
-            <Footer/>
         </div>
     </section>
   );
