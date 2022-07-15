@@ -3,6 +3,7 @@ import About from '../src/Components/About';
 import Projects from '../src/Components/Projects';
 import Resume from '../src/Components/Resume';
 import Contact from '../src/Components/Contact';
+import Header from '../src/Components/Header';
 
 function App() {
 
@@ -17,6 +18,11 @@ function App() {
 
   return (
     <html>
+      <Header
+      currnetPage={currnetPage}
+      setCurrentPage={setCurrentPage}
+      />
+
       <body>
         {currnetPage === 'About Me' && <About />}
         {currnetPage === 'Projects' && <Projects />}

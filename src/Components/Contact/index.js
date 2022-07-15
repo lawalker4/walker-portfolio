@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from '../../Components/Footer/index';
 
 import { validateEmail } from '../../utils/helpers';
 
@@ -16,8 +17,7 @@ function ContactForm() {
     }
   };
 
-  function handleChange(e) {
-    //allow email to be submited
+  const handleChange = (e) => {
     if (e.target.name === 'email') {
       const isValid = validateEmail(e.target.value);
       if (!isValid) {
@@ -32,15 +32,7 @@ function ContactForm() {
         setErrorMessage('');
       }
     }
-
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value })
-    }
   };
-
-  function handleSubmit(e) {
-    e.preventDegault();
-  }
 
   return (
     <section>
@@ -65,6 +57,9 @@ function ContactForm() {
         )}
         <button data-testid="button" type="submit">Submit</button>
       </form>
+
+    <Footer/>
+
     </section>
   );
 }

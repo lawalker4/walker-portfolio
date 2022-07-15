@@ -1,21 +1,21 @@
 import React from 'react';
+import Footer from '../Footer';
 import coverImage from "../../assets/cover/cover-image.jpg";
 
 
 function About() {
     return (
     <section className="my-5">
-        <div className="about-me-content">
-        <h1 id="about">Who am I?</h1>
+        <h1 id="about">About Me</h1>
         <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
-        </div>
+  
         <div className='my-2'>
             <p>
             Loram ipsum
-            <br>
-            Loram ipsum
-            </br>
             </p>
+        </div>
+        <div className='icons'>
+            <Footer/>
         </div>
     </section>
   );

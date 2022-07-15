@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav component matches snapshot 1`] = `
+<DocumentFragment>
+  <nav
+    class="nav-links"
+  >
+    <p
+      class="link false"
+      id="about-me"
+    >
+      <span
+        class="nav-link"
+      >
+        About Me
+      </span>
+    </p>
+    <p
+      class="link false"
+      id="projects"
+    >
+      <span
+        class="nav-link"
+      >
+        Projects
+      </span>
+    </p>
+    <p
+      class="link false"
+      id="resume"
+    >
+      <span
+        class="nav-link"
+      >
+        Resume
+      </span>
+    </p>
+    <p
+      class="link false"
+      id="contact"
+    >
+      <span
+        class="nav-link"
+      >
+        Contact
+      </span>
+    </p>
+  </nav>
+</DocumentFragment>
+`;

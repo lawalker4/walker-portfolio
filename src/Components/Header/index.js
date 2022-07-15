@@ -1,21 +1,20 @@
 import React from 'react';
+import Nav from '../Nav';
 
-function Modal({currentPhoto}) {
-    const {name, category, description, index} = currentPhoto;
+function Header(props) {
+    const {currentPage, setCurrentPage} = props;
   
     return (
-      <div className="modalBackdrop">
-        <div className="modalContainer">
-          <h3 className="modalTitle">{name}</h3>
-          <img src={require(`../../assets/large/${category}/${index}.jpg`)} alt="current category" />
-          <p>{description}</p>
-                <button type="button">
-                    Close this modal
-                </button>
-            </div>
-        </div>
-
+      <header>
+        <h1 className='header-title'>
+            Ashley Walker Portfolio
+        </h1>
+        <Nav
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+        />
+        </header>
     );
 }
 
-export default Modal;
+export default Header;
