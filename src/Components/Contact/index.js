@@ -6,7 +6,6 @@ function ContactForm() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
   const [errorMessage, setErrorMessage] = useState('');
-  //error message
   const { name, email, message } = formState;
 
   const handleSubmit = (e) => {
@@ -17,7 +16,8 @@ function ContactForm() {
     }
   };
 
-  const handleChange = (e) => {
+  function handleChange(e) {
+    //allow email to be submited
     if (e.target.name === 'email') {
       const isValid = validateEmail(e.target.value);
       if (!isValid) {
@@ -32,7 +32,15 @@ function ContactForm() {
         setErrorMessage('');
       }
     }
+
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value })
+    }
   };
+
+  function handleSubmit(e) {
+    e.preventDegault();
+  }
 
   return (
     <section>
