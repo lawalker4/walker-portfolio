@@ -24,7 +24,7 @@ exports[`About component renders matches snapshot DOM node structure 1`] = `
       </p>
     </div>
     <div
-      class="icons"
+      classname="icons"
     >
       <div
         class="footer-container"

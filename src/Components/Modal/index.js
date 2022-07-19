@@ -1,7 +1,7 @@
 import React from "react";
 
 const Modal = ({ onClose, currentProject }) => {
-    const { name, project, description, index } = currnetProjects;
+    const { name, project, description, index } = currentProject;
 
     return (
         <div className="modalBackdrop">

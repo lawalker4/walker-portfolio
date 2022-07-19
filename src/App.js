@@ -24,12 +24,12 @@ function App() {
       setCurrentPage={setCurrentPage}
       />
 
-      <body>
+      <div>
         {currnetPage === 'About Me' && <About />}
         {currnetPage === 'Projects' && <Projects />}
         {currnetPage === 'Contact' && <Contact />}
         {currnetPage === 'Resume' && <Resume />}
-      </body>
+      </div>
       <Footer/>
       </>
   );

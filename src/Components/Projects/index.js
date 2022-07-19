@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Modal } from "../Modal";
+import Modal  from "../Modal";
 
 
 import recipepantry from '../../assets/images/recipepantry.JPG'
@@ -76,7 +76,7 @@ const Projects = ({ category }) => {
   const currentProjects = photos.filter((photo) => photo.category === category);
 
   const toggleModal = (image, i) => {
-    setCurrentProjects({...image, index: i});
+    setCurrentProject({...image, index: i});
     setIsModalOpen(!isModalOpen);
   };
 
@@ -89,9 +89,10 @@ const Projects = ({ category }) => {
         {currentProjects.map((image, i) => (
           //make image a link
           <img
-          src={require(`../../assets/images${category}/${i}.jpg`).default}
           alt={image.name}
           className="img-thumbnail mx-1"
+          src={image.image_path}
+          
           onClick={() => toggleModal(image, i)}
           key={image.name}
           />

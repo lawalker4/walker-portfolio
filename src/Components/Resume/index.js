@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../Footer';
 import resume from '../../assets/resume.pdf';
 
 function Resume() {
