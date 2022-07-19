@@ -1,17 +1,17 @@
 import React from 'react';
-import Footer from '../Footer';
-import coverImage from "../../assets/cover/cover-image.jpg";
+import headshot from '../../assets/images/headshot.PNG';
 
 
 function About() {
     return (
-    <section className="my-5">
+    <section className="my-5 text-center">
         <h1 id="about">About Me</h1>
-        <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
+        <img id="photo" src={headshot} alt="headshot" />
   
         <div className='my-2'>
+
             <p>
-            Loram ipsum
+            
             </p>
         </div>
         <div className='icons'>

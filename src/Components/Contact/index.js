@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Footer from '../../Components/Footer/index';
-
 import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
