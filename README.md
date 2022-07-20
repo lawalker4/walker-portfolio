@@ -55,8 +55,6 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 [Bootstrap](https://www.npmjs.com/package/bootstrap)
 
-[Heroku](www.heroku.com)
-
 ---
 
 ### Screenshot
