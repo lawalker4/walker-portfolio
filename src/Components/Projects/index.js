@@ -12,7 +12,7 @@ import weatherdashboard from '../../assets/images/weatherdashboard.JPG'
 
 const Projects = ({ category }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentProject, setCurrentProject] = useState();
+  const [ setCurrentProject] = useState();
  
   const [photos] = useState([
     {
