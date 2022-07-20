@@ -81,14 +81,14 @@ const Projects = ({ category }) => {
   };
 
   return (
-    <div className="portfolio">
+    <div className="port">
       {isModalOpen && (
         <Modal onClose={toggleModal} currentProjects={currentProjects} />
       )}
       <div className="flex-row">
         {currentProjects.map((image, i) => (
           //make image a link
-          <a href={image.link} key={image.name} target= "_blank">
+          <a href={image.link} key={image.name}>
             <img
           alt={image.name}
           className="img-thumbnail mx-1"
