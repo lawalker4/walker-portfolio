@@ -8,7 +8,7 @@ import notetaker from '../../assets/images/notetaker.JPG'
 import bistro from '../../assets/images/bistro.JPG'
 import workday from '../../assets/images/workday.JPG'
 import weatherdashboard from '../../assets/images/weatherdashboard.JPG'
-
+import password from '../../assets/images/password.JPG'
 
 const Projects = ({ category }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -69,6 +69,16 @@ const Projects = ({ category }) => {
         "Server-Side APIs Challenge: Weather Dashboard",
       link: "https://github.com/lawalker4/weather-dashboard",
       githublink: "https://github.com/lawalker4/weather-dashboard",
+    },
+    {
+
+      name: "Password Generator",
+      image_path: password,
+      project: category,
+      description:
+        "I created a password generator using JavaScript. I created a password that is 8-128 characters long. Giving the client the ability to pick between symbols, numbers and case choice. ",
+      link: "https://github.com/lawalker4/js-passwordgenerator",
+      githublink: "https://github.com/lawalker4/js-passwordgenerator",
     },
 
   ]);
