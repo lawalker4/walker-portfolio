@@ -5,7 +5,7 @@ import Modal  from "../Modal";
 import recipepantry from '../../assets/images/recipepantry.JPG'
 import brews from '../../assets/images/brews.JPG'
 import notetaker from '../../assets/images/notetaker.JPG'
-import password from '../../assets/images/password.JPG'
+import bistro from '../../assets/images/bistro.JPG'
 import workday from '../../assets/images/workday.JPG'
 import weatherdashboard from '../../assets/images/weatherdashboard.JPG'
 
@@ -15,6 +15,15 @@ const Projects = ({ category }) => {
   const [ setCurrentProject] = useState();
  
   const [photos] = useState([
+    {
+      name: "Bistro Box",
+      image_path: bistro,
+      project: category,
+      description:
+        "This application allows the user to select and create their own meal kit box. This application uses REACT, MongoDB, and Javascript to name a few packages.",
+      link: "https://bistro-box.herokuapp.com/",
+      githublink: "https://github.com/charliebear2000/BistroBox",
+    },
     {
       name: "The Recipe Pantery",
       image_path: recipepantry,
@@ -41,15 +50,6 @@ const Projects = ({ category }) => {
         "Using Express.js this application, called Note Taker, will allow you to save and retrieve notes that you have saved on your application.",
       link: "https://ancient-island-85133.herokuapp.com/",
       githublink: "https://github.com/lawalker4/notetaker",
-    },
-    {
-      name: "Password Generator",
-      image_path: password,
-      project: category,
-      description:
-        "I created a password generator using JavaScript. I created a password that is 8-128 characters long. Giving the client the ability to pick between symbols, numbers and case choice. ",
-      link: "https://github.com/lawalker4/js-passwordgenerator",
-      githublink: "https://github.com/lawalker4/js-passwordgenerator",
     },
     {
       name: "Work Day Scheduler",
